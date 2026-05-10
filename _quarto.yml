@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: site
 
 website:
   description: "A blog built with Quarto"

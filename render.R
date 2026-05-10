@@ -1,0 +1,6 @@
+pkgs <- c("quarto")
+ins.mat <- installed.packages()
+missing.pkgs <- setdiff(pkgs, rownames(ins.mat))
+install.packages(missing.pkgs)
+unlink("_site", recursive = TRUE)
+quarto::quarto_render()
